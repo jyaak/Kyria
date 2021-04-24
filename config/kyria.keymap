@@ -43,15 +43,15 @@
 		};	
 		lower_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
+// |  ESC  |BTCLR| BT1 | BT2  | BT3  | BT4  |                                          |  7   |  8    |  9    |  0   |   '   |   \  |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  4   |  5    |  6    |  L   |   ;   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT |    0    |  1   |  2    |  3    |  .   |   /   | CTRL |
 //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp N7 &kp N8  &kp N9  &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp N4 &kp N5  &kp N6  &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N1 &kp N2  &kp N3  &kp DOT &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT		
+&trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                   &kp N7 &kp N8  &kp N9  &kp N0   &kp SQT    &kp BSLH
+&trans &kp A      &kp S        &kp D        &kp F        &kp G                          &kp N4 &kp N5  &kp N6  &kp L   &kp SEMI &kp SQT
+&trans &kp Z      &kp X        &kp C        &kp V        &kp B &kp LSHFT &kp LSHFT      &kp LSHFT &kp N0 &kp N1 &kp N2  &kp N3  &kp DOT &kp FSLH &kp RCTRL
+	                               &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT		
 			>;
 		};	
 		raise_layer {
