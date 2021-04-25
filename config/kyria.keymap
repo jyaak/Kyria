@@ -51,7 +51,7 @@
 			bindings = <
 &trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                   &kp N7 &kp N8  &kp N9  &kp N0   &kp SQT    &kp BSLH
 &trans &kp A      &kp S        &kp D        &kp F        &kp G                          &kp N4 &kp N5  &kp N6  &kp L   &kp SEMI &kp SQT
-&trans &kp Z      &kp X        &kp C        &kp V        &kp B &kp LSHFT &kp LSHFT      &kp LSHFT &kp N0 &kp N1 &kp N2  &kp N3  &kp DOT &kp FSLH &kp RCTRL
+&trans &kp Z      &kp X        &kp C        &kp V        &kp B &kp ESC &kp LSHFT      &kp LSHFT &kp N0 &kp N1 &kp N2  &kp N3  &kp DOT &kp FSLH &kp RCTRL
 	                               &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT		
 			>;
 			sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
