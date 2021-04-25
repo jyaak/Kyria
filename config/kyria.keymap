@@ -68,7 +68,7 @@
    &kp LSHFT &trans    &trans  &trans    &trans    &trans               &trans    &trans    &trans          &trans   &kp BSLH &kp TILDE
 	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT		
 			>;
-			
+			sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
 		};
 	};
 };
