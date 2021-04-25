@@ -53,6 +53,7 @@
 &trans &kp Z      &kp X        &kp C        &kp V        &kp B &kp LSHFT &kp LSHFT      &kp LSHFT &kp N0 &kp N1 &kp N2  &kp N3  &kp DOT &kp FSLH &kp RCTRL
 	                               &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC       &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT		
 			>;
+			sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
 		};	
 		raise_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
