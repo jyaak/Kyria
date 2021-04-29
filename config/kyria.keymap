@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 &left_encoder { resolution = <2>; };
+&kscan0 { // but use the actual label here if it isn't "kscan0"
+    debounce-period = <10>;
 
 / {
     behaviors {
