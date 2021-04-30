@@ -55,7 +55,7 @@
 &trans &trans    &trans   &trans    &kp C_PREV &kp C_NEXT                    &kp N7 &kp N8  &kp N9  &kp N0   &kp SQT    &kp BSLH
 &trans &kp LEFT  &kp DOWN &kp UP    &kp RIGHT  &kp G                         &kp N4 &kp N5  &kp N6  &kp L   &kp SEMI &kp SQT
 &trans &kp Z     &kp X    &kp C     &kp V      &kp B &kp ESC &kp LSHFT       &kp LSHFT &kp N0 &kp N1 &kp N2  &kp N3  &kp DOT &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC          &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT		
+	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC          &kp RET  &kp N0  &kp N0 &kp BSPC &kp RALT		
 			>;
 			sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
 		};	
