@@ -38,9 +38,9 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  ALT    |  ESC   |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | PP   | TAB  |RAISE | LOWER   |  TAB   |  |   RET   |  SPACE  |BSPC  |  DEL  |  GUI  |
 			bindings = <
-	&kp ESC   &hm RALT Q &kp W   &kp E       &kp R       &kp T                                                &kp Y &kp U       &kp I       &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A      &kp S   &hm RCTRL D &hm RSHFT F &kp G                                                &kp H &hm LSHFT J &hm LCTRL K &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z      &kp X   &kp C       &kp V       &kp B &kp LALT &kp ESC        &kp LSHFT &kp LSHFT &kp N &kp M       &kp COMMA   &kp DOT &kp FSLH &kp RCTRL
+	&kp ESC   &hm RALT Q &kp W   &kp E       &kp R       &kp T                                                &kp Y &kp U       &kp I       &kp O      &kp P    &kp BSLH
+	&kp TAB   &kp A      &kp S   &hm RCTRL D &hm RSHFT F &kp G                                                &kp H &hm LSHFT J &hm LCTRL K &km RGUI L &kp SEMI &kp SQT
+	&kp LSHFT &kp Z      &kp X   &kp C       &kp V       &kp B &kp LALT &kp ESC        &kp LSHFT &kp LSHFT    &kp N &kp M       &kp COMMA   &kp DOT    &kp FSLH &kp RCTRL
 	                                   &kp C_PP &kp TAB &mo 2 &mo 1  &kp TAB          &kp RET  &kp SPACE  &kp BSPC &kp DEL  &kp RGUI
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
