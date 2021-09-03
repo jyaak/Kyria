@@ -33,10 +33,10 @@
 
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                         |  Y   |  U    |  I    |  O   |   P   |   \  |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                         |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  ALT    |  ESC   |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-//                     | PP   | TAB  |RAISE | LOWER   |  TAB   |  |   RET   |  SPACE  |BSPC  |  DEL  |  GUI  |
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                           |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                           |  H   |  J    |  K    |  L   |   ;   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |   |    |          |   |   |  N   |  M    |  ,    |  .   |   /   | GUI  |
+//                     | PP   | TAB  |RAISE |   |    |          |   |   | ENTER| SPACE |  BSPC |
 			bindings = <
 	&kp ESC   &kp Q   &kp W   &kp E       &kp R       &kp T                                     &kp Y   &kp U       &kp I       &kp O   &kp P    &kp BSLH
 	&kp TAB   &kp A   &kp S   &hm RCTRL D &hm RSHFT F &kp G                                     &kp H   &hm LSHFT J &hm LCTRL K &kp L   &kp SEMI &kp SQT
