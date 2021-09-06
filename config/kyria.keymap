@@ -33,10 +33,10 @@
 
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                           |  Y   |  U    |  I    |  O   |   P   |   \  |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                           |  H   |  J    |  K    |  L   |   ;   |   '  |
+// |  PP   |  Q  |  W  |  E   |  R   |  T   |                           |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  ALT  |  A  |  S  |  D   |  F   |  G   |                           |  H   |  J    |  K    |  L   |   ;   |   '  |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   |    |          |   |   |  N   |  M    |  ,    |  .   |   /   | GUI  |
-//                     | PP   | TAB  |RAISE |   |    |          |   |   | ENTER| SPACE |  BSPC |
+//                     |  L2  |  L1  | TAB  |   |    |          |   |   | ENTER| SPACE |  BSPC |
 			bindings = <
 	&kp C_PP  &kp Q   &kp W   &kp E       &kp R       &kp T                                     &kp Y   &kp U       &kp I       &kp O   &kp P    &kp BSLH
 	&kp LALT  &kp A   &kp S   &hm RCTRL D &hm RSHFT F &kp G                                     &kp H   &hm LSHFT J &hm LCTRL K &kp L   &kp SEMI &kp SQT
@@ -47,15 +47,15 @@
 		};	
 		lower_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |     |     |      | PREV | NEXT |                                |  7   |  8    |  9    |  0   |   '   |   \  |
-// |  TAB  | LEFT|DOWN | UP   |RIGHT |  G   |                                |  4   |  5    |  6    |  -   |   +   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |    |    |            |   |     |  1   |  2    |  3    |  .   |   /   | CTRL |
+// |       |     |     |      | PREV | NEXT |                                |  7   |  8    |  9    |  0   |   '   |   \  |
+// |       | LEFT|DOWN | UP   |RIGHT |      |                                |  4   |  5    |  6    |  -   |   +   |   '  |
+// |       |     |     |      |      |      |    |    |            |   |     |  1   |  2    |  3    |  .   |   /   | CTRL |
 //                     | GUI  | DEL  | RET  |    |    |            |   |     |      |  0    |       |
 			bindings = < 
-&trans &trans    &trans   &trans    &kp C_PREV &kp C_NEXT                               &kp N7 &kp N8  &kp N9  &kp EQUAL  &kp SQT  &kp BSLH
-&trans &kp LEFT  &kp DOWN &kp UP    &kp RIGHT  &kp G                                    &kp N4 &kp N5  &kp N6  &kp MINUS  &kp PLUS &kp SQT
-&trans &kp Z     &kp X    &kp C     &kp V      &kp B &kp ESC &kp TAB  &kp LSHFT &kp N0  &kp N1 &kp N2  &kp N3  &kp DOT    &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC    &kp RET  &kp N0  &none  &kp N0  &none		
+&none  &none     &none    &none     &kp C_PREV &kp C_NEXT                               &kp N7 &kp N8  &kp N9  &kp EQUAL  &kp SQT  &kp BSLH
+&none  &kp LEFT  &kp DOWN &kp UP    &kp RIGHT  &none                                    &kp N4 &kp N5  &kp N6  &kp MINUS  &kp PLUS &kp SQT
+&none  &none     &none    &none     &kp none   &none   &none &none       &none &none    &kp N1 &kp N2  &kp N3  &kp DOT    &kp FSLH &kp RCTRL
+	                  &kp LGUI  &kp DEL    &kp RET &none &none       &none &none    &none  &kp N0  &none		
 			>;
 			sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
 		};	
