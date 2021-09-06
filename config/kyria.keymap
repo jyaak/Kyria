@@ -54,7 +54,7 @@
 			bindings = < 
 &none  &none     &none    &none     &kp C_PREV &kp C_NEXT                               &kp N7 &kp N8  &kp N9  &kp EQUAL  &kp SQT  &kp BSLH
 &none  &kp LEFT  &kp DOWN &kp UP    &kp RIGHT  &none                                    &kp N4 &kp N5  &kp N6  &kp MINUS  &kp PLUS &kp SQT
-&none  &none     &none    &none     &kp none   &none   &none &none       &none &none    &kp N1 &kp N2  &kp N3  &kp DOT    &kp FSLH &kp RCTRL
+&none  &none     &none    &none     &none      &none   &none &none       &none &none    &kp N1 &kp N2  &kp N3  &kp DOT    &kp FSLH &kp RCTRL
 	                  &kp LGUI  &kp DEL    &kp RET &none &none       &none &none    &none  &kp N0  &none		
 			>;
 			sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
