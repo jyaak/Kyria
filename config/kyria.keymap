@@ -7,9 +7,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-&left_encoder { resolution = <4>; };
+&left_encoder { resolution = <8>; };
 &kscan0 {
-    debounce-period = <5>;
+    debounce-period = <7>;
 };
 
 / {
@@ -18,7 +18,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <180>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -38,26 +38,26 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   |    |          |   |   |  N   |  M    |  ,    |  .   |   /   | GUI  |
 //                     | PP   | TAB  |RAISE |   |    |          |   |   | ENTER| SPACE |  BSPC |
 			bindings = <
-	&kp ESC   &kp Q   &kp W   &kp E       &kp R       &kp T                                     &kp Y   &kp U       &kp I       &kp O   &kp P    &kp BSLH
+	&kp C_PP  &kp Q   &kp W   &kp E       &kp R       &kp T                                     &kp Y   &kp U       &kp I       &kp O   &kp P    &kp BSLH
 	&kp LALT  &kp A   &kp S   &hm RCTRL D &hm RSHFT F &kp G                                     &kp H   &hm LSHFT J &hm LCTRL K &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z   &kp X   &kp C       &kp V       &kp B   &none &none        &none &none   &kp N   &kp M       &kp COMMA   &kp DOT &kp FSLH &kp RGUI
-	                          &mo 2       &mo 1       &kp TAB &none &none        &none &none   &kp RET &kp SPACE   &kp BSPC
+	&kp LSHFT &kp Z   &kp X   &kp C       &kp V       &kp B   &none &none         &none &none   &kp N   &kp M       &kp COMMA   &kp DOT &kp FSLH &kp RGUI
+	                          &mo 2       &mo 1       &kp TAB &none &none         &none &none   &kp RET &kp SPACE   &kp BSPC
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};	
 		lower_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |     |     |      | PREV | NEXT |                                          |  7   |  8    |  9    |  0   |   '   |   \  |
-// |  TAB  | LEFT|DOWN | UP   |RIGHT |  G   |                                          |  4   |  5    |  6    |  -   | PLUS  |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT |    0    |  1   |  2    |  3    |  .   |   /   | CTRL |
-//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |    0    | BSPC | RGUI  | R-ALT |
+// |  ESC  |     |     |      | PREV | NEXT |                                |  7   |  8    |  9    |  0   |   '   |   \  |
+// |  TAB  | LEFT|DOWN | UP   |RIGHT |  G   |                                |  4   |  5    |  6    |  -   |   +   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |    |    |            |   |     |  1   |  2    |  3    |  .   |   /   | CTRL |
+//                     | GUI  | DEL  | RET  |    |    |            |   |     |      |  0    |       |
 			bindings = < 
-&trans &trans    &trans   &trans    &kp C_PREV &kp C_NEXT                               &kp N7 &kp N8  &kp N9  &kp N0     &kp SQT  &kp BSLH
+&trans &trans    &trans   &trans    &kp C_PREV &kp C_NEXT                               &kp N7 &kp N8  &kp N9  &kp EQUAL  &kp SQT  &kp BSLH
 &trans &kp LEFT  &kp DOWN &kp UP    &kp RIGHT  &kp G                                    &kp N4 &kp N5  &kp N6  &kp MINUS  &kp PLUS &kp SQT
 &trans &kp Z     &kp X    &kp C     &kp V      &kp B &kp ESC &kp TAB  &kp LSHFT &kp N0  &kp N1 &kp N2  &kp N3  &kp DOT    &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC    &kp RET  &kp N0  &kp BSPC &kp RGUI &kp RALT		
+	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC    &kp RET  &kp N0  &none  &kp N0  &none		
 			>;
-			sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
+			sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
 		};	
 		
 		raise_layer {
