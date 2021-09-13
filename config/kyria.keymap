@@ -13,14 +13,36 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <80>;
+            key-positions = <13 14>;
+            bindings = <&kp LALT>;
+        };
+    };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <80>;
+            key-positions = <5 17>;
+            bindings = <&kp LALT>;
+        };
+    };
+};
+
+/ {
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
             quick_tap_ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
     };
