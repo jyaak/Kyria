@@ -15,10 +15,10 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_layer2 {
             timeout-ms = <80>;
-            key-positions = <5 17>;
-            bindings = <&kp LALT>;
+            key-positions = <41 42>;
+            bindings = <&mo 2>;
         };
     };
 };
@@ -26,10 +26,10 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_alt {
             timeout-ms = <80>;
-            key-positions = <41 42>;
-            bindings = <&mo 2>;
+            key-positions = <5 17>;
+            bindings = <&kp LALT>;
         };
     };
 };
