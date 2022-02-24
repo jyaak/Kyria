@@ -39,7 +39,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <80>;
-            key-positions = <41 43>;
+            key-positions = <41 42>;
             bindings = <&mo 2>;
         };
     };
