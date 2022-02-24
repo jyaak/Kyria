@@ -17,17 +17,6 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <80>;
-            key-positions = <13 14>;
-            bindings = <&kp LALT>;
-        };
-    };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <80>;
             key-positions = <5 17>;
             bindings = <&kp LALT>;
         };
