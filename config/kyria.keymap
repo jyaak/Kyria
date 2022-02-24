@@ -40,7 +40,7 @@
         combo_esc {
             timeout-ms = <80>;
             key-positions = <41 43>;
-            bindings = <& mo 2>;
+            bindings = <&mo 2>;
         };
     };
 };
